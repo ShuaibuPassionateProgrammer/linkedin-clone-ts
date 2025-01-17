@@ -1,9 +1,11 @@
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <h1>Linkedin Clone</h1>
-      <p>Build with Nextjs and Typescript</p>
-    </>
-  );
+    <div>
+      <h1>Homepage</h1>
+    </div>
+  )
 }
+
+export default Home
