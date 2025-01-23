@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-async function Header() {
+const Header = async () => {
   return (
     <div className="flex items-center p-2 max-w-6xl mx-auto">
       {/* Logo */}
@@ -68,6 +68,6 @@ async function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;
