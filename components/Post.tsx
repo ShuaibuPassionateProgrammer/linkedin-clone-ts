@@ -12,7 +12,7 @@ import ReactTimeago from "react-timeago";
 import { Badge } from "./ui/badge";
 import { toast } from "sonner";
 
-const Post = () => {
+const Post = ({ post }: { post: IPostDocument }) => {
   return (
     <div className="bg-white rounded-md border">
       <div className="p-4 flex space-x-2">
@@ -83,6 +83,7 @@ const Post = () => {
     </div>
   );
 };
+
 
 
 export default Post;
