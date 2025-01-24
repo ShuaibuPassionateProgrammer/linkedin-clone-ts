@@ -13,6 +13,8 @@ import { Badge } from "./ui/badge";
 import { toast } from "sonner";
 
 const Post = ({ post }: { post: IPostDocument }) => {
+  const { user } = useUser();
+
   return (
     <div className="bg-white rounded-md border">
       <div className="p-4 flex space-x-2">
@@ -83,7 +85,5 @@ const Post = ({ post }: { post: IPostDocument }) => {
     </div>
   );
 };
-
-
 
 export default Post;
