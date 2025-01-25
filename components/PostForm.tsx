@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 import { ImageIcon, XIcon } from "lucide-react";
 import { toast } from "sonner";
 
-function PostForm() {
+const PostForm = () => {
   const ref = useRef<HTMLFormElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [preview, setPreview] = useState<string | null>(null);
@@ -121,6 +121,6 @@ function PostForm() {
       <hr className="mt-2 border-gray-300" />
     </div>
   );
-}
+};
 
 export default PostForm;
