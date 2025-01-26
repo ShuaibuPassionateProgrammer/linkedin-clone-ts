@@ -1,11 +1,15 @@
-import React from 'react'
+import { IPostDocument } from "@/mongodb/models/post";
+import Post from "./Post";
 
-const PostFeed = () => {
+const PostFeed = async ({ posts } : { posts: IPostDocument[] }) => {
+  
   return (
-    <div>
-      <h1>Post Feed</h1>
+    <div className="space-y-2 pb-20">
+      {posts?.map((post) => (
+        <Post key={post._id} post={post} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default PostFeed
+export default PostFeed;
