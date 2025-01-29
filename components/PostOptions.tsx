@@ -12,13 +12,13 @@ import { UnlikePostRequestBody } from "@/app/api/posts/[post_id]/unlike/route";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
 
-function PostOptions({
+const PostOptions = ({
   postId,
   post,
 }: {
   postId: string;
   post: IPostDocument;
-}) {
+}) => {
   const [isCommentsOpen, setIsCommentsOpen] = useState(false);
   const { user } = useUser();
   const [liked, setLiked] = useState(false);
