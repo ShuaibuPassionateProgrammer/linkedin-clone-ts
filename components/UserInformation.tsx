@@ -4,7 +4,7 @@ import { IPostDocument } from "@/mongodb/models/post";
 import { Button } from "./ui/button";
 import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
-async function UserInformation({ posts }: { posts: IPostDocument[] }) {
+const UserInformation = async ({ posts }: { posts: IPostDocument[] }) => {
   const user = await currentUser();
 
   const firstName = user?.firstName as string;
@@ -70,6 +70,6 @@ async function UserInformation({ posts }: { posts: IPostDocument[] }) {
       </div>
     </div>
   );
-}
+};
 
 export default UserInformation;
