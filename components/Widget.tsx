@@ -1,4 +1,4 @@
-function Widget() {
+const Widget = () => {
   return (
     <div className="ml-6 h-[790px]">
       <iframe
@@ -8,6 +8,6 @@ function Widget() {
       ></iframe>
     </div>
   );
-}
+};
 
 export default Widget;
