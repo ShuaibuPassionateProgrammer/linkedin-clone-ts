@@ -8,7 +8,7 @@ import connectDB from "@/mongodb/db";
 
 export const revalidate = 0;
 
-export default async function Home() {
+const Home = async () => {
   await connectDB();
   const posts = await Post.getAllPosts();
 
